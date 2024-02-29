@@ -17,6 +17,6 @@ Scenario: Add two numbers
 	Given I input following numbers to the calculator
 		| Numbers |
 		| 50      |
-		| 70      |
+		| 80      |
 	When the two numbers are added
 	Then the result should "PASSED"
