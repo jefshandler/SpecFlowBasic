@@ -19,4 +19,7 @@ Scenario: Add two numbers
 		| 50      |
 		| 80      |
 	When the two numbers are added
+	Then I see the result and few more details
+		| Results | Logo |
+		| 120     | plus |
 	Then the result should "PASSED"
