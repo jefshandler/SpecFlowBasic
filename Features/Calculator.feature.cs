@@ -154,14 +154,23 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "50"});
                 table1.AddRow(new string[] {
-                            "70"});
+                            "80"});
 #line 17
  testRunner.Given("I input following numbers to the calculator", ((string)(null)), table1, "Given ");
 #line hidden
 #line 21
  testRunner.When("the two numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Results",
+                            "Logo"});
+                table2.AddRow(new string[] {
+                            "120",
+                            "plus"});
 #line 22
+ testRunner.Then("I see the result and few more details", ((string)(null)), table2, "Then ");
+#line hidden
+#line 25
  testRunner.Then("the result should \"PASSED\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

@@ -1,4 +1,5 @@
 using TechTalk.SpecFlow.Assist;
+using TechTalk.SpecFlow.CommonModels;
 
 namespace SpecFlowBasic.StepDefinitions;
 
@@ -50,8 +51,14 @@ public sealed class CalculatorStepDefinitions
             Console.WriteLine($"The numbers ar {item.Numbers}");
         }
     }
-    
 
-
+    [Then(@"I see the result and few more details")]
+    public void ThenISeeTheResultAndFewMoreDetails(Table table)
+    {
+        dynamic data = table.CreateDynamicInstance();
+        
+        Console.WriteLine($"Theresults is goning to hold the value {data.Results} whit logo {data.Logo}");
+        
+    }
 
 }
