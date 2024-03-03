@@ -1,9 +1,4 @@
 ﻿using AutoFixture;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpecFlowBasic.StepDefinitions;
 
@@ -19,6 +14,13 @@ public class UserStepDefinitions
             .Create();
         Console.WriteLine($"The user {person.Name} has email {person.Email} has address {person.Address} has phone is {person.phone}");
     }
+
+    [Given(@"I input dynamic domain for (.* email)")]
+    public void GivenIInputDynamicDomainForTesteSpecflow_ComEmail(string email)
+    {
+        Console.WriteLine($"The randor email address is:{email}");
+    }
+
 
     public record User
     {
